@@ -285,12 +285,12 @@
   font-family: Montserrat;
   color: #8c8c8c;
   padding: 7px 25px;
-background
   border-radius: 3px;
   outline: none;
   border: 1px solid #ebebeb;
   background: #fff;
   transition: color, background 0.5s ease;
+  cursor: pointer;
 }
 .projects .button-case__button:hover {
   background: #998575;
