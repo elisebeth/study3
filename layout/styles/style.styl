@@ -82,6 +82,21 @@
       align-items center
       font-family Raleway !important
       text-align center
+  .bottom-btn
+    width 10px
+    height 10px
+    outline none 
+    background rgba(255, 255, 255, 0.5)
+    border-radius 50%
+    cursor pointer
+    border none
+    transition transform .3s, border .3s, background .3s ease
+  .bottom-btn:not(:last-of-type)
+    margin-right 7px
+  .bottom-btn:hover
+    transform scale(1.5)
+    background none
+    border 1px solid #D3C1AD
   .text
     &__title
       font-weight 500
@@ -94,6 +109,7 @@
       font-family Raleway !important
       color #fff
       margin-bottom 40px
+      line-height 1.2
     &__btn
       background #988574
       border-radius 3px
@@ -104,6 +120,11 @@
       cursor pointer
       outline none
       border none
+
+.active
+  transform scale(1.5) !important
+  background none !important
+  border 1px solid #D3C1AD !important
 
 .bold
   font-size 52px !important
@@ -278,6 +299,7 @@
   &__card
     width 370px
     display block
+    cursor pointer
   &__card:nth-of-type(n - 3)
     margin-bottom 70px
   &&__card:nth-of-type(-n + 3)
@@ -295,7 +317,8 @@
     position absolute
     border 10px solid transparent
     border-bottom 10px solid #FBFAF8
-    transition display .5s ease !important
+    transition opacity .3s ease
+    opacity 1
   &__card:hover figcaption
     background #352F2D
   &__card:hover figcaption .card__title
@@ -303,7 +326,7 @@
   &__card:hover figcaption .card__description
     color #C7B299
   &__card:hover figcaption::before
-    display none
+    opacity 0
   .card
     &__img
       display block
@@ -354,4 +377,325 @@ iframe
 
 /* video */
 
+/* about-mob */
 
+.about-mob
+  padding 80px 0 0 0
+  &__wrapper
+    display flex
+    justify-content space-between
+    align-items center
+  &__img
+    display block
+  &__text-content
+    width 670px
+  .text-content
+    &__title
+      font-size 30px
+      font-family Raleway
+      color #555
+      margin-bottom 20px
+    &__description
+      font-family Montserrat
+      font-size 16px
+      color #8C8C8C
+      line-height 1.2
+      margin-bottom 50px
+    &__list
+      list-style-type none
+      margin-left 64px
+  .list
+    &__item
+      font-size 16px
+      font-weight 300
+      line-height 1.2
+      color #8C8C8C
+      display flex
+      align-items center
+      margin-bottom 10px
+    &__item::before
+      content ''
+      display inline-block
+      margin-right 8px
+      width 21px
+      height 21px
+      background url('../img/circle_arrow.svg') center center / contain no-repeat
+
+/* about-mob */
+
+/* stats */
+
+.stats
+  padding 35px 0 50px 0
+  background radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%)
+  &__wrapper
+    display flex
+    align-items center
+    justify-content center
+  &__item
+    display flex
+    flex-direction column
+    align-items center
+    width 120px
+  &__item:not(last-of-type)
+    margin-right 70px
+  &__item-img
+    width 45px
+    height 45px
+    display block
+    margin-bottom 5px
+  &__item-num
+    color #fff
+    font-size 48px
+    font-weight 300
+    font-family Montserrat
+    margin-bottom 5px
+  &__item-title
+    font-size 14px
+    color #C7B299
+    font-weight 300
+    font-family Montserat
+    position relative
+  &__item-title::after
+    content ''
+    height 2px
+    width 30px
+    position absolute
+    left 50%
+    transform: translateX(-50%)
+    display block
+    margin-top 15px
+    background #fff
+
+/* stats */
+
+/* recent */
+
+.recent
+  padding 100px 0 40px 0
+  &__wrapper
+    display flex
+    flex-direction column
+    align-items center
+  &__title
+    font-size 30px
+    font-family Raleway 
+    color #555
+    margin-bottom 20px
+    text-align center
+  &__description
+    width 65%
+    font-size 16px
+    line-height 1.75
+    font-weight 300
+    text-align center
+    font-family Montserrat 
+    color #8C8C8C
+    margin-bottom 30px
+  &__inner
+    display flex
+    width 100%
+    justify-content space-between
+    align-items center
+  &__button-case
+    width 100px
+    display flex
+    justify-content center
+    margin-top 55px
+  &__button
+    width 22px
+    height 22px
+    display block
+    border-radius 50%
+    fill #D1D1D1
+    cursor pointer
+    transition fill .3s ease
+    transform scale(-1)
+  &__button:last-of-type
+    transform scale(1)
+    margin-left 20px
+  &__button:hover
+    fill #C7B299
+  .inner
+    &__item
+      width 370px
+      cursor pointer
+    &__item:hover .item__text-content
+      border-color #352F2D
+      background #352F2D
+    &__item:hover .text-content__title
+      color #C7B299
+    &__item:hover .text-content__description
+      color #fff
+  .item
+    &__img
+      width 100%
+      display block
+    &__text-content
+      padding 30px 20px 20px 30px
+      border-bottom 1px solid #B2B2B2
+      border-right 1px solid #B2B2B2
+      border-left 1px solid #B2B2B2
+      transition border, background .3s ease
+  .text-content
+    &__title
+      font-size 20px
+      font-weight 500
+      color #555
+      font-family Raleway
+      margin-bottom 20px
+      transition color .3s ease
+    &__description
+      font-weight 300
+      font-size 14px
+      color #000
+      font-family Montserrat 
+      line-height 1.5
+      margin-bottom 15px
+      transition color .3s ease
+    &__read-more
+      font-weight 300
+      font-size 14px
+      color #C7B299
+      font-family Montserrat
+      cursor pointer
+      position relative
+    &__read-more::after
+      content ''
+      display block
+      width 8px
+      height 8px
+      position absolute
+      top 55%
+      right -10px
+      transform: translateY(-50%) translateX(50%)
+      background url('../img/span__play.svg') center center / contain no-repeat
+
+.peeked-item .item__text-content
+  border-color #352F2D !important
+  background #352F2D !important
+.peeked-item .text-content__title
+  color #C7B299 !important
+.peeked-item .text-content__description
+  color #fff !important
+
+/* recent */
+
+/* partners */
+
+.partners
+  padding 140px 0
+  background url('../img/bg_partners.jpg') center center / cover no-repeat
+  &__icons
+    display block
+    margin 0 auto
+
+/* partners */
+
+/* footer */
+
+.footer
+  &__license
+    padding 60px 0 40px 0
+    background #101010
+  .license
+    &__list
+      list-style-type none 
+      display flex
+      align-items center
+    &__list-item
+      padding 0 10px
+      color #555555
+      font-family Montserrat 
+      font-size 13px
+      font-weight 300
+      transition color .3s ease
+      cursor pointer
+    &__list-item:hover
+      color #BAA78F
+    &__list-item:not(:last-of-type)
+      border-right 1px solid #1A1A1A
+  &__about-us
+    padding 75px 0 100px 0
+    background #191919
+    display flex
+    align-items center
+  .about-us
+    &__wrapper
+      display flex
+      justify-content center
+    &__item
+      width 270px
+      margin-right 50px
+    &__item:first-of-type
+      margin-right 70px
+    &__item:last-of-type
+      margin-left 0
+  .item
+    &__logo
+      display block
+      width 195px
+      margin-bottom 20px
+    &__description
+      font-family Montserrat 
+      font-weight 300
+      font-size 14px
+      line-height 1.2
+      color #555
+      margin-bottom 16px
+      transition color .3s ease
+      cursor pointer
+    &__description:not(:last-of-type)::after
+      content ''
+      display block
+      height 1px
+      width 100%
+      background #242424
+      margin-top 12px
+    &__read-more
+      font-size 14px
+      color #D1D1D1
+      font-family Montserrat
+      cursor pointer
+      position relative
+    &__read-more::after
+      content ''
+      display block
+      position absolute
+      top 55%
+      right -16px
+      transform translateY(-50%)
+      width 5px
+      height 8px
+      background url('../img/read_more_icon.svg') center center / contain no-repeat
+    &__title
+      color #fff
+      font-size 24px
+      font-weight 600
+      font-family Raleway 
+      margin-top 30px
+      margin-bottom 24px
+    &__date
+      color #363636
+      font-size 12px
+      font-family Monserrat 
+      font-weight 300
+      display block
+      margin-bottom 6px
+      transition color .3s ease
+      margin-top 12px
+    &__description:hover .item__date
+      color #fff
+    &__description:hover
+      color #C7B299
+    &__uniq
+      color #00BFF3
+      font-family Montserrat
+      font-weight 300
+      font-size 14px
+    &__img
+      display block
+      margin-top 30px
+      cursor pointer
+
+/* footer */

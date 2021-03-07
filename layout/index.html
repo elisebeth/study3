@@ -1,233 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://meyerweb.com/eric/tools/css/reset/reset.css"
-    />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Document</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__wrapper container">
-        <div class="header__top-items">
-          <a href="#" class="header__logo"></a>
-          <nav class="header__navigation">
-            <a href="#" class="header__link">Home</a
-            ><a href="#" class="header__link">About us</a
-            ><a href="#" class="header__link">Portfolio</a
-            ><a href="#" class="header__link">Features</a
-            ><a href="#" class="header__link">Blog</a
-            ><a href="#" class="header__link">Pricing</a
-            ><a href="#" class="header__link">Shortcodes</a
-            ><a href="#" class="header__link">Contacts</a>
-          </nav>
-          <div class="header__icons">
-            <a href="#" class="icons__link cart"></a>
-            <a href="#" class="icons__link search"></a>
-          </div>
-        </div>
-        <div class="header__main-content">
-          <img src="./img/slider.svg" class="main-content__arrow"></img>
-          <div class="main-content__text">
-            <h2 class="text__title">Unique and Modern Design</h2>
-            <h1 class="text__title bold">Portfolio PSD Template</h1>
-            <p class="text__description">
-              Nam liber tempor cum soluta nobis eleifend option congue nihil
-              imperdiet doming id quod mazim placerat facer possim assum.
-            </p>
-            <button class="text__btn">GET STARTED</button>
-          </div>
-          <img src="./img/slider.svg" class="main-content__arrow"></img>
-        </div>
-        <div class="header__bottom-btns">
-          <button class="bottom-btn"></button>
-          <button class="bottom-btn"></button>
-          <button class="bottom-btn"></button>
-          <button class="bottom-btn"></button>
-          <button class="bottom-btn"></button>
-          <button class="bottom-btn"></button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__wrapper container">
+      <div class="header__top-items">
+        <a href="#" class="header__logo"></a>
+        <nav class="header__navigation">
+          <a href="#" class="header__link">Home</a><a href="#" class="header__link">About us</a><a href="#"
+            class="header__link">Portfolio</a><a href="#" class="header__link">Features</a><a href="#"
+            class="header__link">Blog</a><a href="#" class="header__link">Pricing</a><a href="#"
+            class="header__link">Shortcodes</a><a href="#" class="header__link">Contacts</a>
+        </nav>
+        <div class="header__icons">
+          <a href="#" class="icons__link cart"></a>
+          <a href="#" class="icons__link search"></a>
         </div>
       </div>
-    </header>
-    <main class="main">
-      <section class="advantages">
-        <div class="advantages__wrapper container">
-          <div class="advantages__item">
-            <svg
-              class="advantages__item-img"
-              width="48"
-              height="48"
-              viewBox="0 0 48 48"
-              fill="#555"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M46.6971 17.1135C46.08 16.5061 45.1004 16.5061 44.4931 17.1135L30.9257 30.671L11.8629 39.0759L8.92408 36.1371L17.3192 17.0645L30.8865 3.50694C31.4939 2.8898 31.4939 1.91021 30.8865 1.30286C30.2694 0.695514 29.2898 0.695514 28.6824 1.30286L14.7037 15.2718L0.51918 47.471L32.7184 33.2963L46.6971 19.3176C47.3045 18.7102 47.3045 17.7208 46.6971 17.1135ZM26.9388 27.889C27.2424 28.1829 27.6343 28.3396 28.0359 28.3396C28.4375 28.3396 28.8294 28.1829 29.1428 27.889L42.2008 14.8212C42.8082 14.2139 42.8082 13.2343 42.2008 12.6171C41.5837 12.0098 40.6041 12.0098 39.9967 12.6171L26.9388 25.6849C26.3314 26.2922 26.3314 27.2718 26.9388 27.889ZM23.5298 24.48C23.8335 24.7739 24.2253 24.9306 24.6269 24.9306C25.0286 24.9306 25.4204 24.7739 25.7241 24.48L38.7918 11.4122C39.3992 10.8049 39.3992 9.81551 38.7918 9.20817C38.1747 8.60082 37.1951 8.60082 36.5877 9.20817L23.5298 22.2661C22.9126 22.8735 22.9126 23.8629 23.5298 24.48ZM20.111 21.0612C20.4147 21.3649 20.8163 21.5216 21.218 21.5216C21.6196 21.5216 22.0114 21.3649 22.3151 21.0612L35.3829 8.00327C35.9902 7.39592 35.9902 6.40653 35.3829 5.79919C34.7755 5.19184 33.7861 5.19184 33.1788 5.79919L20.111 18.8571C19.5037 19.4645 19.5037 20.4539 20.111 21.0612Z"
-              />
-            </svg>
-            <h2 class="advantages__item-title">Web & App Design</h2>
-            <p class="advantages__item-content">
-              Nam liber tempor cum soluta nobis eleifend option congue nihil
-              imperdiet doming id quod mazim.
-            </p>
-          </div>
-          <div class="advantages__item">
-            <svg
-              class="advantages__item-img"
-              width="44"
-              height="40"
-              viewBox="0 0 44 40"
-              fill="#555"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M21.85 0.109985L0.410004 11.67L21.85 23.23L43.29 11.67L21.85 0.109985ZM21.85 26.96L4.4 17.55L0.410004 19.7L21.85 31.25L43.29 19.7L39.3 17.55L21.85 26.96ZM21.85 34.98L4.4 25.57L0.410004 27.72L21.85 39.28L43.29 27.72L39.3 25.57L21.85 34.98Z"
-              />
-            </svg>
-            <h2 class="advantages__item-title">Development</h2>
-            <p class="advantages__item-content">
-              Nam liber tempor cum soluta nobis eleifend option congue nihil
-              imperdiet doming id quod mazim.
-            </p>
-          </div>
-          <div class="advantages__item">
-            <svg
-              class="advantages__item-img"
-              width="44"
-              height="44"
-              viewBox="0 0 44 44"
-              fill="#555"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M43.93 21.85C43.93 20.23 42.76 18.5 41.32 17.99C39.88 17.48 38.49 16.24 38.08 15.25C37.68 14.27 37.78 12.4 38.44 11.02C39.09 9.64001 38.69 7.59001 37.55 6.44001C36.4 5.30001 34.36 4.90001 32.98 5.56001C31.6 6.21001 29.73 6.32001 28.75 5.91001C27.76 5.51001 26.52 4.11001 26.01 2.67001C25.49 1.23001 23.76 0.0700073 22.14 0.0700073C20.52 0.0700073 18.79 1.23001 18.28 2.67001C17.77 4.11001 16.52 5.51001 15.54 5.91001C14.56 6.32001 12.69 6.21001 11.31 5.56001C9.92999 4.90001 7.87998 5.30001 6.73998 6.44001C5.58998 7.59001 5.18999 9.64001 5.84999 11.02C6.50998 12.4 6.60998 14.27 6.19999 15.25C5.79998 16.23 4.40999 17.48 2.96999 17.99C1.52999 18.5 0.359985 20.23 0.359985 21.85C0.359985 23.47 1.52999 25.2 2.96999 25.71C4.40999 26.22 5.79999 27.47 6.20999 28.45C6.60999 29.43 6.50998 31.3 5.84999 32.68C5.18999 34.06 5.58998 36.11 6.73998 37.26C7.87998 38.4 9.92999 38.8 11.31 38.14C12.69 37.49 14.56 37.38 15.54 37.79C16.52 38.2 17.77 39.59 18.28 41.03C18.79 42.47 20.52 43.63 22.14 43.63C23.76 43.63 25.49 42.47 26.01 41.03C26.52 39.59 27.76 38.2 28.74 37.79C29.73 37.38 31.6 37.49 32.98 38.14C34.36 38.8 36.4 38.4 37.55 37.26C38.69 36.11 39.09 34.06 38.44 32.68C37.78 31.3 37.67 29.43 38.08 28.45C38.48 27.47 39.88 26.22 41.32 25.71C42.76 25.2 43.93 23.47 43.93 21.85ZM22.14 29.84C17.72 29.84 14.15 26.27 14.15 21.86C14.15 17.44 17.72 13.87 22.14 13.87C26.55 13.87 30.13 17.44 30.13 21.86C30.13 26.27 26.55 29.84 22.14 29.84Z"
-              />
-            </svg>
-            <h2 class="advantages__item-title">Customization</h2>
-            <p class="advantages__item-content">
-              Nam liber tempor cum soluta nobis eleifend option congue nihil
-              imperdiet doming id quod mazim.
-            </p>
-          </div>
-          <div class="advantages__item">
-            <svg
-              class="advantages__item-img"
-              width="52"
-              height="36"
-              viewBox="0 0 52 36"
-              fill="#555"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M8.99999 13.25C9.99999 11.19 12.47 9.64002 14.74 9.64002H40.95V7.98002C40.95 6.62002 39.84 5.50002 38.49 5.50002H27.67V4.06002C27.67 2.00002 26.02 0.330017 23.99 0.330017H17.7C16.72 0.330017 15.79 0.720017 15.09 1.43002C14.39 2.13002 14.01 3.06002 14.01 4.06002V5.50002H3.19999C1.83999 5.50002 0.73999 6.62002 0.73999 7.98002V30.15L8.99999 13.25ZM16.47 4.06002C16.47 3.73002 16.6 3.42002 16.83 3.18002C17.06 2.94002 17.37 2.82002 17.7 2.82002H23.99C24.67 2.82002 25.22 3.37002 25.22 4.06002V5.50002H16.47V4.06002ZM41.92 33.76C41.33 34.98 39.73 35.98 38.38 35.98H3.07999C1.72999 35.98 1.10999 34.98 1.70999 33.76L11.2 14.34C11.8 13.12 13.39 12.12 14.74 12.12H50.04C51.39 12.12 52.01 13.12 51.41 14.34L41.92 33.76Z"
-              />
-            </svg>
-            <h2 class="advantages__item-title">Marketing</h2>
-            <p class="advantages__item-content">
-              Nam liber tempor cum soluta nobis eleifend option congue nihil
-              imperdiet doming id quod mazim.
-            </p>
-          </div>
+      <div class="header__main-content" data-slider_num="1">
+        <img src="./img/slider.svg" class="main-content__arrow"></img>
+        <div class="main-content__text">
+          <h2 class="text__title">Unique and Modern Design</h2>
+          <h1 class="text__title bold">Portfolio PSD Template</h1>
+          <p class="text__description">
+            Nam liber tempor cum soluta nobis eleifend option congue nihil
+            imperdiet doming id quod mazim placerat facer possim assum.
+          </p>
+          <button class="text__btn">GET STARTED</button>
         </div>
-      </section>
-      <section class="ideas">
-        <div class="ideas__wrapper container">
+        <img src="./img/slider.svg" class="main-content__arrow"></img>
+      </div>
+      <div class="header__bottom-btns">
+        <button class="bottom-btn active"></button>
+        <button class="bottom-btn"></button>
+        <button class="bottom-btn"></button>
+        <button class="bottom-btn"></button>
+        <button class="bottom-btn"></button>
+        <button class="bottom-btn"></button>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="advantages">
+      <div class="advantages__wrapper container">
+        <div class="advantages__item">
+          <svg class="advantages__item-img" width="48" height="48" viewBox="0 0 48 48" fill="#555"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M46.6971 17.1135C46.08 16.5061 45.1004 16.5061 44.4931 17.1135L30.9257 30.671L11.8629 39.0759L8.92408 36.1371L17.3192 17.0645L30.8865 3.50694C31.4939 2.8898 31.4939 1.91021 30.8865 1.30286C30.2694 0.695514 29.2898 0.695514 28.6824 1.30286L14.7037 15.2718L0.51918 47.471L32.7184 33.2963L46.6971 19.3176C47.3045 18.7102 47.3045 17.7208 46.6971 17.1135ZM26.9388 27.889C27.2424 28.1829 27.6343 28.3396 28.0359 28.3396C28.4375 28.3396 28.8294 28.1829 29.1428 27.889L42.2008 14.8212C42.8082 14.2139 42.8082 13.2343 42.2008 12.6171C41.5837 12.0098 40.6041 12.0098 39.9967 12.6171L26.9388 25.6849C26.3314 26.2922 26.3314 27.2718 26.9388 27.889ZM23.5298 24.48C23.8335 24.7739 24.2253 24.9306 24.6269 24.9306C25.0286 24.9306 25.4204 24.7739 25.7241 24.48L38.7918 11.4122C39.3992 10.8049 39.3992 9.81551 38.7918 9.20817C38.1747 8.60082 37.1951 8.60082 36.5877 9.20817L23.5298 22.2661C22.9126 22.8735 22.9126 23.8629 23.5298 24.48ZM20.111 21.0612C20.4147 21.3649 20.8163 21.5216 21.218 21.5216C21.6196 21.5216 22.0114 21.3649 22.3151 21.0612L35.3829 8.00327C35.9902 7.39592 35.9902 6.40653 35.3829 5.79919C34.7755 5.19184 33.7861 5.19184 33.1788 5.79919L20.111 18.8571C19.5037 19.4645 19.5037 20.4539 20.111 21.0612Z" />
+          </svg>
+          <h2 class="advantages__item-title">Web & App Design</h2>
+          <p class="advantages__item-content">
+            Nam liber tempor cum soluta nobis eleifend option congue nihil
+            imperdiet doming id quod mazim.
+          </p>
+        </div>
+        <div class="advantages__item">
+          <svg class="advantages__item-img" width="44" height="40" viewBox="0 0 44 40" fill="#555"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M21.85 0.109985L0.410004 11.67L21.85 23.23L43.29 11.67L21.85 0.109985ZM21.85 26.96L4.4 17.55L0.410004 19.7L21.85 31.25L43.29 19.7L39.3 17.55L21.85 26.96ZM21.85 34.98L4.4 25.57L0.410004 27.72L21.85 39.28L43.29 27.72L39.3 25.57L21.85 34.98Z" />
+          </svg>
+          <h2 class="advantages__item-title">Development</h2>
+          <p class="advantages__item-content">
+            Nam liber tempor cum soluta nobis eleifend option congue nihil
+            imperdiet doming id quod mazim.
+          </p>
+        </div>
+        <div class="advantages__item">
+          <svg class="advantages__item-img" width="44" height="44" viewBox="0 0 44 44" fill="#555"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M43.93 21.85C43.93 20.23 42.76 18.5 41.32 17.99C39.88 17.48 38.49 16.24 38.08 15.25C37.68 14.27 37.78 12.4 38.44 11.02C39.09 9.64001 38.69 7.59001 37.55 6.44001C36.4 5.30001 34.36 4.90001 32.98 5.56001C31.6 6.21001 29.73 6.32001 28.75 5.91001C27.76 5.51001 26.52 4.11001 26.01 2.67001C25.49 1.23001 23.76 0.0700073 22.14 0.0700073C20.52 0.0700073 18.79 1.23001 18.28 2.67001C17.77 4.11001 16.52 5.51001 15.54 5.91001C14.56 6.32001 12.69 6.21001 11.31 5.56001C9.92999 4.90001 7.87998 5.30001 6.73998 6.44001C5.58998 7.59001 5.18999 9.64001 5.84999 11.02C6.50998 12.4 6.60998 14.27 6.19999 15.25C5.79998 16.23 4.40999 17.48 2.96999 17.99C1.52999 18.5 0.359985 20.23 0.359985 21.85C0.359985 23.47 1.52999 25.2 2.96999 25.71C4.40999 26.22 5.79999 27.47 6.20999 28.45C6.60999 29.43 6.50998 31.3 5.84999 32.68C5.18999 34.06 5.58998 36.11 6.73998 37.26C7.87998 38.4 9.92999 38.8 11.31 38.14C12.69 37.49 14.56 37.38 15.54 37.79C16.52 38.2 17.77 39.59 18.28 41.03C18.79 42.47 20.52 43.63 22.14 43.63C23.76 43.63 25.49 42.47 26.01 41.03C26.52 39.59 27.76 38.2 28.74 37.79C29.73 37.38 31.6 37.49 32.98 38.14C34.36 38.8 36.4 38.4 37.55 37.26C38.69 36.11 39.09 34.06 38.44 32.68C37.78 31.3 37.67 29.43 38.08 28.45C38.48 27.47 39.88 26.22 41.32 25.71C42.76 25.2 43.93 23.47 43.93 21.85ZM22.14 29.84C17.72 29.84 14.15 26.27 14.15 21.86C14.15 17.44 17.72 13.87 22.14 13.87C26.55 13.87 30.13 17.44 30.13 21.86C30.13 26.27 26.55 29.84 22.14 29.84Z" />
+          </svg>
+          <h2 class="advantages__item-title">Customization</h2>
+          <p class="advantages__item-content">
+            Nam liber tempor cum soluta nobis eleifend option congue nihil
+            imperdiet doming id quod mazim.
+          </p>
+        </div>
+        <div class="advantages__item">
+          <svg class="advantages__item-img" width="52" height="36" viewBox="0 0 52 36" fill="#555"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M8.99999 13.25C9.99999 11.19 12.47 9.64002 14.74 9.64002H40.95V7.98002C40.95 6.62002 39.84 5.50002 38.49 5.50002H27.67V4.06002C27.67 2.00002 26.02 0.330017 23.99 0.330017H17.7C16.72 0.330017 15.79 0.720017 15.09 1.43002C14.39 2.13002 14.01 3.06002 14.01 4.06002V5.50002H3.19999C1.83999 5.50002 0.73999 6.62002 0.73999 7.98002V30.15L8.99999 13.25ZM16.47 4.06002C16.47 3.73002 16.6 3.42002 16.83 3.18002C17.06 2.94002 17.37 2.82002 17.7 2.82002H23.99C24.67 2.82002 25.22 3.37002 25.22 4.06002V5.50002H16.47V4.06002ZM41.92 33.76C41.33 34.98 39.73 35.98 38.38 35.98H3.07999C1.72999 35.98 1.10999 34.98 1.70999 33.76L11.2 14.34C11.8 13.12 13.39 12.12 14.74 12.12H50.04C51.39 12.12 52.01 13.12 51.41 14.34L41.92 33.76Z" />
+          </svg>
+          <h2 class="advantages__item-title">Marketing</h2>
+          <p class="advantages__item-content">
+            Nam liber tempor cum soluta nobis eleifend option congue nihil
+            imperdiet doming id quod mazim.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="ideas">
+      <div class="ideas__wrapper container">
         <h2 class="ideas__title">Waxom is Realization of your Ideas.</h2>
-        <p class="ideas__description">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+        <p class="ideas__description">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+          Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
         <img src="./img/ideas__bg.jpg" alt="image" class="ideas__bg">
       </div>
-      </section>
-      <section class="theme">
-        <div class="theme__wrapper container">
-          <div class="theme__text-content">
-            <h2 class="theme__title"><span class="theme__color">Waxom</span> Multipurpose WordPress Theme</h2>
-            <p class="theme__description">Don't Forget to Rate the Template. Thanks so much!</p>
-          </div>
-          <button class="theme__btn">PURCHASE NOW</button>
+    </section>
+    <section class="theme">
+      <div class="theme__wrapper container">
+        <div class="theme__text-content">
+          <h2 class="theme__title"><span class="theme__color">Waxom</span> Multipurpose WordPress Theme</h2>
+          <p class="theme__description">Don't Forget to Rate the Template. Thanks so much!</p>
         </div>
-      </section>
-      <section class="projects">
-        <div class="projects__wrapper container">
-          <h2 class="projects__title">Our Latest Projects.</h2>
-          <p class="projects__description">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-          <div class="projects__button-case">
-            <button class="button-case__button peeked-button">All</button>
-            <button class="button-case__button">Web Design</button>
-            <button class="button-case__button">Mobile App</button>
-            <button class="button-case__button">Illustration</button>
-            <button class="button-case__button">Photography</button>
-          </div>
-          <div class="projects__cards">
-            <figure class="projects__card">
-              <img src="./img/item1.jpg" alt="image" class="card__img">
-              <figcaption>
-                <h2 class="card__title">Claritas Etiam Processus</h2>
-                <p class="card__description">Photography, Nature</p>
-              </figcaption>
-            </figure>
-            <figure class="projects__card">
-              <img src="./img/item2.jpg" alt="image" class="card__img">
-              <figcaption class="peeked-card">
-                <h2 class="card__title">Photography, Nature</h2>
-                <p class="card__description">Graphic Design, Mock-Up</p>
-              </figcaption>
-            </figure>
-            <figure class="projects__card">
-              <img src="./img/item3.jpg" alt="image" class="card__img">
-              <figcaption>
-                <h2 class="card__title">Usus Legentis Videntur</h2>
-                <p class="card__description">Photography, Holiday</p>
-              </figcaption>
-            </figure>
-            <figure class="projects__card">
-              <img src="./img/item4.jpg" alt="image" class="card__img">
-              <figcaption>
-                <h2 class="card__title">Claritas Etiam Processus</h2>
-                <p class="card__description">Photography, Nature</p>
-              </figcaption>
-            </figure>
-            <figure class="projects__card">
-              <img src="./img/item5.jpg" alt="image" class="card__img">
-              <figcaption>
-                <h2 class="card__title">Quam Nutamus Farum</h2>
-                <p class="card__description">Graphic Design, Mock-Up</p>
-              </figcaption>
-            </figure>
-            <figure class="projects__card">
-              <img src="./img/item6.jpg" alt="image" class="card__img">
-              <figcaption>
-                <h2 class="card__title">Usus Legentis Videntur</h2>
-                <p class="card__description">Photography, Holiday</p>
-              </figcaption>
-            </figure>
-          </div>
-          <button class="projects__button">LOAD MORE</button>
+        <button class="theme__btn">PURCHASE NOW</button>
+      </div>
+    </section>
+    <section class="projects">
+      <div class="projects__wrapper container">
+        <h2 class="projects__title">Our Latest Projects.</h2>
+        <p class="projects__description">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+          Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+        <div class="projects__button-case">
+          <button class="button-case__button peeked-button">All</button>
+          <button class="button-case__button">Web Design</button>
+          <button class="button-case__button">Mobile App</button>
+          <button class="button-case__button">Illustration</button>
+          <button class="button-case__button">Photography</button>
         </div>
-      </section>
-      <section class="video">
-        <iframe height="100" width="100" src="https://www.youtube.com/embed/AQZmCe95l88" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </section>
+        <div class="projects__cards">
+          <figure class="projects__card">
+            <img src="./img/item1.jpg" alt="image" class="card__img">
+            <figcaption>
+              <h2 class="card__title">Claritas Etiam Processus</h2>
+              <p class="card__description">Photography, Nature</p>
+            </figcaption>
+          </figure>
+          <figure class="projects__card">
+            <img src="./img/item2.jpg" alt="image" class="card__img">
+            <figcaption class="peeked-card">
+              <h2 class="card__title">Photography, Nature</h2>
+              <p class="card__description">Graphic Design, Mock-Up</p>
+            </figcaption>
+          </figure>
+          <figure class="projects__card">
+            <img src="./img/item3.jpg" alt="image" class="card__img">
+            <figcaption>
+              <h2 class="card__title">Usus Legentis Videntur</h2>
+              <p class="card__description">Photography, Holiday</p>
+            </figcaption>
+          </figure>
+          <figure class="projects__card">
+            <img src="./img/item4.jpg" alt="image" class="card__img">
+            <figcaption>
+              <h2 class="card__title">Claritas Etiam Processus</h2>
+              <p class="card__description">Photography, Nature</p>
+            </figcaption>
+          </figure>
+          <figure class="projects__card">
+            <img src="./img/item5.jpg" alt="image" class="card__img">
+            <figcaption>
+              <h2 class="card__title">Quam Nutamus Farum</h2>
+              <p class="card__description">Graphic Design, Mock-Up</p>
+            </figcaption>
+          </figure>
+          <figure class="projects__card">
+            <img src="./img/item6.jpg" alt="image" class="card__img">
+            <figcaption>
+              <h2 class="card__title">Usus Legentis Videntur</h2>
+              <p class="card__description">Photography, Holiday</p>
+            </figcaption>
+          </figure>
+        </div>
+        <button class="projects__button">LOAD MORE</button>
+      </div>
+    </section>
+    <iframe class="video" src="https://www.youtube.com/embed/AQZmCe95l88" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <section class="about-mob">
+      <div class="about-mob__wrapper container">
+        <img src="./img/iphone.jpg" alt="image" class="about-mob__img">
+        <div class="about-mob__text-content">
+          <h2 class="text-content__title">Excellent for Mobile Devices.</h2>
+          <p class="text-content__description">Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+            suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere
+            me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant
+            sollemnes in futurum.</p>
+          <ul class="text-content__list">
+            <li class="list__item">Nam liber tempor cum soluta nobis eleifend option;</li>
+            <li class="list__item">Option congue nihil imperdiet doming id quod mazim placerat facer;</li>
+            <li class="list__item">Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
+            <li class="list__item">Investigationes demonstraverunt lectores</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="stats">
+      <div class="stats__wrapper">
+        <div class="stats__item">
+          <img src="./img/stats__1.svg" alt="image" class="stats__item-img">
+          <span class="stats__item-num">3587</span>
+          <span class="stats__item-title">Satisfied Clients</span>
+        </div>
+        <div class="stats__item">
+          <img src="./img/stats__2.svg" alt="image" class="stats__item-img">
+          <span class="stats__item-num">207</span>
+          <span class="stats__item-title">Cups of coffee</span>
+        </div>
+        <div class="stats__item">
+          <img src="./img/stats__3.svg" alt="image" class="stats__item-img">
+          <span class="stats__item-num">2500</span>
+          <span class="stats__item-title">Blog posts</span>
+        </div>
+        <div class="stats__item">
+          <img src="./img/stats__4.svg" alt="image" class="stats__item-img">
+          <span class="stats__item-num">873</span>
+          <span class="stats__item-title">Likes</span>
+        </div>
+        <div class="stats__item">
+          <img src="./img/stats__5.svg" alt="image" class="stats__item-img">
+          <span class="stats__item-num">900</span>
+          <span class="stats__item-title">We launched</span>
+        </div>
+      </div>
+    </section>
+    <section class="recent">
+      <div class="recent__wrapper container">
+        <h2 class="recent__title">Recent Posts.</h2>
+        <p class="recent__description">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+          Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+        <div class="recent__inner">
+          <figure class="inner__item">
+            <img src="./img/recent_1.jpg" alt="image" class="item__img">
+            <figcaption class="item__text-content">
+              <h2 class="text-content__title">Lorem ipsum dolor sit amet</h2>
+              <p class="text-content__description">Claritas est etiam processus dynamicus, qui sequitur mutationem
+                consuetudium.</p>
+              <span class="text-content__read-more">Read More</span>
+            </figcaption>
+          </figure>
+          <figure class="inner__item peeked-item">
+            <img src="./img/recent_2.jpg" alt="image" class="item__img">
+            <figcaption class="item__text-content">
+              <h2 class="text-content__title">Lorem ipsum dolor sit amet</h2>
+              <p class="text-content__description">Claritas est etiam processus dynamicus, qui sequitur mutationem
+                consuetudium.</p>
+              <span class="text-content__read-more">Read More</span>
+            </figcaption>
+          </figure>
+          <figure class="inner__item">
+            <img src="./img/recent_3.jpg" alt="image" class="item__img">
+            <figcaption class="item__text-content">
+              <h2 class="text-content__title">Lorem ipsum dolor sit amet</h2>
+              <p class="text-content__description">Claritas est etiam processus dynamicus, qui sequitur mutationem
+                consuetudium.</p>
+              <span class="text-content__read-more">Read More</span>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="recent__button-case">
+          <svg class="recent__button" width="22" height="22" viewBox="0 0 22 22" fill="#D1D1D1"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14.42 10.4298L9.64003 5.65978C9.36003 5.36978 8.89003 5.36978 8.60003 5.65978C8.32003 5.94978 8.32003 6.41978 8.60003 6.69978L12.86 10.9598L8.60003 15.2098C8.32003 15.4998 8.32003 15.9598 8.60003 16.2498C8.89003 16.5398 9.36003 16.5398 9.64003 16.2498L14.42 11.4798C14.56 11.3298 14.63 11.1498 14.63 10.9598C14.63 10.7698 14.56 10.5798 14.42 10.4298ZM11.01 0.0297852C4.95003 0.0297852 0.0300293 4.93979 0.0300293 11.0098C0.0300293 17.0798 4.95003 21.9898 11.01 21.9898C17.08 21.9898 22 17.0798 22 11.0098C22 4.93979 17.08 0.0297852 11.01 0.0297852ZM11.01 20.5198C5.77003 20.5198 1.50003 16.2498 1.50003 11.0098C1.50003 5.76979 5.77003 1.49979 11.01 1.49979C16.26 1.49979 20.52 5.76979 20.52 11.0098C20.52 16.2498 16.26 20.5198 11.01 20.5198Z" />
+          </svg>
+          <svg class="recent__button" width="22" height="22" viewBox="0 0 22 22" fill="#D1D1D1"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14.42 10.4298L9.64003 5.65978C9.36003 5.36978 8.89003 5.36978 8.60003 5.65978C8.32003 5.94978 8.32003 6.41978 8.60003 6.69978L12.86 10.9598L8.60003 15.2098C8.32003 15.4998 8.32003 15.9598 8.60003 16.2498C8.89003 16.5398 9.36003 16.5398 9.64003 16.2498L14.42 11.4798C14.56 11.3298 14.63 11.1498 14.63 10.9598C14.63 10.7698 14.56 10.5798 14.42 10.4298ZM11.01 0.0297852C4.95003 0.0297852 0.0300293 4.93979 0.0300293 11.0098C0.0300293 17.0798 4.95003 21.9898 11.01 21.9898C17.08 21.9898 22 17.0798 22 11.0098C22 4.93979 17.08 0.0297852 11.01 0.0297852ZM11.01 20.5198C5.77003 20.5198 1.50003 16.2498 1.50003 11.0098C1.50003 5.76979 5.77003 1.49979 11.01 1.49979C16.26 1.49979 20.52 5.76979 20.52 11.0098C20.52 16.2498 16.26 20.5198 11.01 20.5198Z" />
+          </svg>
+        </div>
+      </div>
+    </section>
+    <section class="partners">
+      <div class="partners__wrapper container">
+        <img src="./img/partners__icons.png" alt="icons" class="partners__icons">
+      </div>
+    </section>
   </main>
-  <footer class="footer"></footer>
-  </body>
+  <footer class="footer">
+    <section class="footer__about-us">
+      <div class="about-us__wrapper container">
+        <div class="about-us__item">
+          <img src="./img/Logo.svg" alt="image" class="item__logo">
+          <p class="item__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh
+            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+            exerci suscipit lobortis claritatem.</p>
+          <span class="item__read-more">Read more</span>
+        </div>
+        <div class="about-us__item">
+          <h2 class="item__title">Recent Posts</h2>
+          <p class="item__description"><span class="item__date">September 08, 2015</span>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+          <p class="item__description"><span class="item__date">September 08, 2015</span>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+          <p class="item__description">
+            <span class="item__date">September 08, 2015</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+          </p>
+        </div>
+        <div class="about-us__item">
+          <h2 class="item__title">Our Twitter</h2>
+          <p class="item__description"><span class="item__uniq">@waxom</span> Cum soluta nobis eleifend option congue
+            nihil imperdiet doming<span class="item__date">3 mins ago</span></p>
+          <p class="item__description">Mirum est <span class="item__uniq">#envato</span> notare quam littera gothica,
+            quam nunc
+            putamus parum
+            anteposuerit litterarum<span class="item__date">5 hours ago</span></p>
+          <p class="item__description">Soluta nobis option bit.ly/1Hniso7<span class="item__date">20 days ago</span></p>
+        </div>
+        <div class="about-us__item">
+          <img src="./img/widget.png" alt="image" class="item__img">
+        </div>
+      </div>
+    </section>
+    <div class="footer__license">
+      <div class="license__wrapper container">
+        <ul class="license__list">
+          <li class="license__list-item">Copyright © 2015 Waxom</li>
+          <li class="license__list-item">Privacy Policy</li>
+          <li class="license__list-item">FAQ</li>
+          <li class="license__list-item">Support</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="./scripts/slider.js"></script>
+</body>
+
 </html>
