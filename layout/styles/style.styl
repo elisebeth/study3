@@ -64,6 +64,17 @@ width-small-tablet = 1200px
                   font-size 22px !important
                   line-height 1.2 !important
                   margin-bottom 5px !important
+  .main
+    .posts
+      &__box
+        justify-content space-around !important
+      &__item
+        margin-top 25px !important
+  .footer
+    &__top
+      .top
+        &__wrapper
+          justify-content space-around !important
 
 @media screen and (max-width width-tablet) and (min-width width-smartphone)
   .header
@@ -73,6 +84,17 @@ width-small-tablet = 1200px
           left 0 !important
         &__slider-btn:last-of-type
           right 0 !important
+  .main
+    .posts
+      &__box
+        justify-content space-around !important
+      &__item
+        margin-top 25px !important
+  .footer
+    &__top
+      .top
+        &__wrapper
+          justify-content space-around !important
           
 
 #menu-toggle
@@ -531,9 +553,300 @@ width-small-tablet = 1200px
     height 500px
     display block
     outline none
-                
-
-
-
+  .mobile
+    padding 80px 0 0 0
+    &__wrapper
+      display flex
+      justify-content center
+      align-items center
+      width 100%
+      flex-wrap wrap
+    &__img
+      display block
+      margin-right 64px 
+    &__content
+      display flex
+      flex-direction column
+      width 40%
+      .content
+        &__title
+          font-family: Raleway;
+          font-weight: 600;
+          font-size: 30px;
+          color: #555555;
+          margin-bottom 20px
+        &__description
+          font-family: Montserrat;
+          font-weight: 300;
+          font-size: 16px;
+          color: #8C8C8C;
+          margin-bottom 50px
+        &__list
+          list-style-type none
+          margin-left 64px
+          .list
+            &__item
+              font-family: Montserrat;
+              font-weight: 300;
+              font-size: 16px;
+              color: #8C8C8C;
+              margin-bottom 10px
+              line-height 21px
+              display inline-block
+              cursor pointer
+            &__item::before
+              content ''
+              display inline-block
+              vertical-align middle
+              width 21px
+              height 21px
+              background url('../img/circle_arrow.svg') center center / contain no-repeat
+              margin-right 8px
+  .stats
+    padding 35px 0
+    background radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%);
+    &__wrapper
+      display flex
+      align-items center
+      justify-content space-around
+      width 100%
+      flex-wrap wrap
+    &__item
+      display flex
+      flex-direction column
+      align-items center
+      width 120px
+      .item
+        &__img
+          display block
+          margin-bottom 5px
+        &__content
+          display flex
+          align-items center
+          width 100%
+          flex-direction column
+          .content
+            &__num
+              font-family: Montserrat;
+              font-weight: 300;
+              font-size: 48px;
+              color: #FFFFFF;
+              margin-bottom 5px
+            &__description
+              font-family: Montserrat;
+              font-weight: 300;
+              font-size: 14px;
+              color: #C7B299;
+    &__item::after
+      content ''
+      display block
+      width 30px
+      height 2px
+      margin 0 auto
+      background #fff
+      margin-top 15px
+  .posts
+    padding 100px 0 40px 0
+    &__wrapper
+      width 100%
+      display flex
+      flex-direction column
+      align-items center
+    &__title
+      font-family: Raleway;
+      font-weight: 600;
+      font-size: 30px;
+      color: #555555;
+      margin-bottom 20px
+    &__description
+      font-family: Montserrat;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.75;
+      text-align: center;
+      margin-bottom 30px
+      width 60%
+      color: #8C8C8C;
+    &__box
+      display flex
+      flex-wrap wrap
+      width 100%
+      align-items center 
+      justify-content space-between
+    &__item
+      display flex
+      width 370px
+      flex-direction column
+      align-items center
+      cursor pointer
+      .item
+        &__img
+          display block
+        &__content
+          padding 30px 25px
+          border 1px solid #b3b3b3
+          border-top none
+          transition background .3s, border-color .3s ease
+          .content
+            &__title
+              font-family: Raleway;
+              font-weight: 500;
+              font-size: 20px;
+              color: #555555;
+              margin-bottom 20px
+              transition color .3s ease
+            &__description
+              font-family: Montserrat;
+              font-weight: 300;
+              font-size: 14px;
+              line-height: 1.5;
+              color: #000000;
+              margin-bottom 20px
+              transition color .3s ease
+            &__read-more
+              font-family: Montserrat;
+              font-weight: 300;
+              font-size: 14px;
+              color: #C7B299;
+              display inline-block
+              .read-more
+                &__icon
+                  display inline-block
+                  margin-left 8px
+    &__item:hover .item__content
+      background #352F2D !important
+      border-color #352F2D !important
+    &__item:hover .content__title
+      color #C7B299 !important
+    &__item:hover .content__description
+      color #fff !important
+    &__button-box
+      display flex
+      align-items center 
+      margin-top 55px
+      .button-box
+        &__button
+          border-radius 50%
+          width 22px
+          height 22px
+          cursor pointer
+          display block
+          transition fill .3s ease
+        &__button:first-of-type
+          transform scale(-1)
+          margin-right 20px
+        &__button:hover
+          fill #C7B299 !important
+  .partners
+    padding 140px 0
+    background url('../img/bg_partners.jpg') center center / cover no-repeat
+    &__wrapper
+      display flex
+      width 100%
+      align-items center 
+      justify-content center
+    &__img
+      display flex
+      width 100%
 
 /* main */
+
+/* footer */
+
+.blue
+  color #00BFF3
+
+.footer
+  &__top
+    padding 75px 0 120px 0
+    background #191919
+    width 100%
+    .top
+      &__wrapper
+        width 100%
+        display flex
+        justify-content space-between
+        flex-wrap wrap
+      &__item
+        width 270px
+        display flex
+        flex-direction column
+        cursor pointer
+        .item
+          &__title
+            font-family: Raleway;
+            font-weight: 600;
+            font-size: 24px;
+            color: #FFFFFF;
+            margin-bottom 24px
+          &__description
+            font-family: Montserrat;
+            font-weight: 300;
+            font-size: 14px;
+            color: #555555;
+            margin-bottom 12px
+            transition color .3s ease
+            .description
+              &__date
+                font-family: Montserrat;
+                font-weight: 300;
+                font-size: 12px;
+                color: #363636;
+                margin-bottom 5px
+                display block
+                transition color .3s ease
+          &__description:not(:last-of-type)::after
+            content ''
+            display block
+            width 100%
+            height 1px
+            background #242424
+            margin-top 15px
+          &__description:hover
+            color #C7B299
+          &__description:hover .description__date
+            color #fff
+          &__img
+            display block
+            width 70%
+            margin-bottom 15px
+          &__read-more
+            font-family: Montserrat;
+            font-size: 14px;
+            color: #D1D1D1;
+            display inline-block
+          &__read-more::after
+            content ''
+            display inline-block
+            margin-left 8px
+            width 5px
+            height 7px
+            background url('../img/read_more_icon.svg') center center / contain no-repeat
+      &__item:not(:first-of-type)
+        margin-top 25px
+      &__widget
+        display block
+  &__bottom
+    padding 60px 0 40px 0
+    background #101010
+    .bottom
+      &__list
+        list-style-type none
+        display flex
+        align-items center
+        flex-wrap wrap
+        .list
+          &__item
+            font-family: Montserrat;
+            font-weight: 300;
+            font-size: 13px;
+            transition color .3s ease
+            color: #555555;
+            padding 0 10px
+            cursor pointer
+          &__item:not(:last-of-type)
+            border-right 1px solid #1A1A1A
+          &__item:hover
+            color #BAA78F
+
+/* footer */
