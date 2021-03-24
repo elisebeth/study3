@@ -1,0 +1,852 @@
+width-tablet = 1920px
+width-smartphone = 600px
+width-small-tablet = 1200px
+
+* 
+  box-sizing border-box
+  padding 0
+  margin 0
+
+.container
+  max-width 1280px
+  margin 0 auto
+
+.hidden
+  display none !important
+
+/* header */
+
+@media screen and (max-width width-smartphone)
+  .menu
+    &__btn
+      display flex !important
+  .header
+    padding-top 10px !important
+    padding-bottom 0 !important
+    &__top-content
+      justify-content space-around
+      position relative
+    &__logo
+      width 25%
+      margin 0 !important
+      background url('../img/treangle.svg') center center / contain no-repeat !important
+    &__nav
+      order -1
+      flex-direction column
+      align-items center
+      justify-content center
+      margin-bottom 20px
+      display none !important
+    &__icons-group
+      margin 0 !important
+      display flex
+      width 24px !important
+      justify-content center !important
+      align-items: center
+    &__cart
+      display none
+    &__search
+      margin 0
+    &__main-content
+      .main-content
+        &__slider-btn:first-of-type
+          left 0 !important
+        &__slider-btn:last-of-type
+          right 0 !important
+        &__center
+          width 60% !important
+          .center
+            &__title
+              font-size 26px !important
+              margin-bottom 15px !important
+              .title
+                &__small
+                  font-size 22px !important
+                  line-height 1.2 !important
+                  margin-bottom 5px !important
+  .main
+    .posts
+      &__box
+        justify-content space-around !important
+      &__item
+        margin-top 25px !important
+  .footer
+    &__top
+      .top
+        &__wrapper
+          justify-content space-around !important
+
+@media screen and (max-width width-tablet) and (min-width width-smartphone)
+  .header
+    &__main-content
+      .main-content
+        &__slider-btn:first-of-type
+          left 0 !important
+        &__slider-btn:last-of-type
+          right 0 !important
+  .main
+    .posts
+      &__box
+        justify-content space-around !important
+      &__item
+        margin-top 25px !important
+  .footer
+    &__top
+      .top
+        &__wrapper
+          justify-content space-around !important
+          
+
+#menu-toggle
+  opacity 0
+  display none
+  order -3
+
+#menu-toggle:checked ~ .header__nav > .nav__item > .nav__link
+  font-size 20px !important
+
+#menu-toggle:checked ~ .header__nav
+  display flex !important
+  flex-direction column
+  align-items center
+  justify-content space-around
+  position absolute
+  top 50vh
+  left 0
+  margin-bottom 0 !important
+  transform translateY(-50%)
+  width 100%
+  height calc(70vh - 10px)
+
+
+#menu-toggle:checked + .menu__btn .menu__btn::before, .menu__btn::after
+  position absolute !important
+  top 20px
+  transform translateY(-50%)
+
+#menu-toggle:checked + .menu__btn::before 
+  transform rotate(-45deg) translateX(-2.5%)
+
+#menu-toggle:checked + .menu__btn::after
+  transform rotate(45deg) translateX(-2.5%)
+  // display none
+
+#menu-toggle:checked + .menu__btn > .btn__span
+  position absolute
+  display none
+
+.menu
+  &__btn
+    order -2
+    width 40px
+    height 40px
+    position relative
+    display none
+    flex-direction column
+    align-items center
+    justify-content space-around
+    transition all .3s ease !important
+  &__btn::before
+    content '' 
+    display block
+    height 4px
+    width 40px
+    background #ccc
+    transition all .3s ease !important
+  &__btn::after
+    content ''
+    width 40px
+    display block
+    height 4px
+    background #ccc
+    transition all .3s ease !important
+.btn
+  &__span
+    width 40px
+    height 4px
+    transition all .3s ease !important
+    display block
+    background #ccc
+
+.header
+  padding 30px 0 50px 0
+  height 100vh
+  background url('../img/bg_header.jpg') center center / cover no-repeat
+  &__wrapper
+    display flex
+    align-items center
+    justify-content space-between
+    flex-direction column
+    width 100%
+    height calc(100vh - 80px)
+  &__top-content
+    display flex
+    align-items center
+    width 100%
+  &__logo
+    display block
+    width 184px
+    height 55px 
+    background url('../img/Logo.svg') center center / contain no-repeat
+    margin-right auto
+  &__nav
+    display flex
+    width 50%
+    justify-content space-between
+    align-items center
+    list-style-type none
+  &__icons-group
+    display flex
+    width 72px
+    height 100%
+    justify-content space-between
+    align-items center
+    margin-left 55px
+  &__icon
+    height 24px
+    width 24px
+    cursor pointer
+  &__cart
+    background url('../img/icon_cart.svg') center center / contain no-repeat
+  &__search
+    background url('../img/icon_search.svg') center center / contain no-repeat
+  .nav
+    &__link
+      display block
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      color #fff
+      text-decoration none
+      transition color .3s ease
+    &__link:hover
+      color #C7B299
+  //main-content
+
+  &__main-content
+    width 100%
+    display flex
+    justify-content center
+    align-items center
+    position relative
+  .main-content
+    &__slider-btn
+      cursor pointer
+      position absolute
+    &__slider-btn:first-of-type
+      left -150px
+    &__slider-btn:last-of-type
+      transform scale(-1)
+      right -150px
+    &__center
+      display flex
+      flex-direction column
+      align-items center
+      width 50%
+      .center
+        &__description
+          font-family: Montserrat;
+          font-size: 16px;
+          text-align: center;
+          color: #FFFFFF;
+          margin-bottom 40px
+        &__btn
+          padding 20px 40px
+          outline none 
+          border none 
+          cursor pointer
+          background: #988574;
+          border-radius: 3px;
+          font-family: Roboto;
+          font-size: 14px;
+          color: #FFFFFF;
+        &__title
+          font-family: Raleway;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 52px;
+          text-align center
+          color #fff
+          margin-bottom 5px
+          .title
+            &__small
+              display block
+              margin-right auto
+              font-family: Raleway;
+              font-weight: 500;
+              font-size: 36px;
+              line-height: 42px;
+              color: #FFFFFF;
+              text-align center
+  &__bottom-buttons
+    display flex
+    width 90px
+    justify-content space-between
+    align-items center
+    .bottom-buttons
+      &__btn
+        width 10px
+        height 10px
+        outline none 
+        border none
+        cursor pointer
+        border-radius 50%
+        transition transform .3s, border .3s, background .3s ease
+        background rgba(255, 255, 255, .5)
+      &__btn:hover
+        transform scale(1.5)
+        border 1px solid #D3C1AD
+        background none
+
+
+
+/* header */
+
+/* main */
+
+@media screen and (max-width width-small-tablet)
+  .main
+    .services
+      &__wrapper
+        justify-content space-around !important
+      &__item
+        margin-bottom 25px !important
+    .wordpress
+      &__wrapper
+        justify-content space-around !important
+    .projects
+      &__button-case
+        justify-content space-around !important
+        .button-case
+          &__button
+            margin-bottom 15px !important
+      &__item-box
+        justify-content space-around !important  
+
+.main
+  width 100%
+  .services
+    padding 90px 0
+    &__wrapper
+      display flex
+      width 100%
+      justify-content space-between
+      align-items center
+      flex-grow 1
+      flex-basis 270px
+      flex-wrap wrap
+    &__item
+      width 270px
+      height 200px
+      display flex
+      flex-direction column
+      align-items center
+      cursor pointer
+      .item
+        &__img
+          display block
+          margin-bottom 30px
+          fill #555
+          transition fill .3s ease
+        &__title
+          font-family: Raleway;
+          font-weight: 600;
+          font-size: 22px;
+          color: #555555;
+          margin-bottom 20px
+          transition color .3s ease
+        &__description
+          font-family: Montserrat;
+          font-weight: 300;
+          font-size: 14px;
+          text-align: center;
+          color: #000000;
+    &__item::after
+      content ''
+      width 70px
+      height 3px
+      display block
+      margin-top 30px
+      background #F1EEE9
+      transition background .3s ease
+    &__item:hover .item__img
+      fill #C7B299
+    &__item:hover .item__title
+      color #C7B299
+    &__item:hover::after
+      background #C7B299
+  .waxom
+    padding 80px 0 0 0
+    background #FBFAF8
+    &__wrapper
+      width 100%
+      display flex
+      flex-direction column
+      align-items center
+    &__title
+      font-family: Raleway;
+      font-weight: 600;
+      font-size: 30px;
+      text-align: center;
+      color: #555555;
+      margin-bottom 20px
+    &__description
+      width 55%
+      font-family: Montserrat;
+      font-weight: 300;
+      font-size: 16px;
+      text-align: center;
+      color: #8C8C8C;
+      margin-bottom 40px
+    &__img
+      display block
+      width 100%
+  .wordpress
+    padding 45px 0
+    background radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%)
+    &__wrapper
+      width 100%
+      display flex
+      justify-content space-between
+      align-items center
+      flex-wrap wrap
+    &__text-content
+      width 45%
+      display flex
+      flex-direction column
+      flex-wrap wrap
+      .text-content
+        &__title
+          font-family: Raleway;
+          font-weight normal
+          font-size: 28px;
+          color: #fff;
+          margin-bottom 5px
+        &__description
+          font-family: Montserrat;
+          font-weight: 300;
+          font-size: 18px;
+          color: #615855;
+    &__special
+      color #C7B299
+    &__button
+      padding 20px 40px
+      outline none 
+      border none 
+      background#988574
+      font-family: Roboto;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      cursor pointer
+  .projects
+    padding 60px 0 30px 0
+    &__wrapper
+      width 100%
+      display flex
+      flex-direction column
+      align-items center
+    &__title
+      font-family: Raleway;
+      font-weight: 600;
+      font-size: 30px;
+      color: #555555;
+      margin-bottom 15px
+    &__description
+      font-family: Montserrat;
+      width 60%
+      font-weight: 300;
+      text-align center
+      line-height 1.2
+      font-size: 16px;
+      color: #8C8C8C;
+      margin-bottom 30px
+    &__button-case
+      width 50%
+      display flex
+      align-items center
+      justify-content space-around
+      margin-bottom 70px
+      flex-wrap wrap
+      .button-case
+        &__button
+          font-family: Montserrat;
+          font-weight: 300;
+          font-size: 14px;
+          color: #8C8C8C;
+          outline none 
+          padding 5px 20px
+          border 1px solid #EBEBEB
+          border-radius: 3px;
+          cursor pointer
+          transition: background .3s, color .3s ease
+        &__button:hover
+          background #998575
+          color #fff
+    &__item-box
+      width 100%
+      display flex
+      justify-content space-between
+      flex-wrap wrap
+      margin-bottom 50px
+    &__item:nth-of-type(-n + 3)
+      margin-bottom 70px
+    &__item
+      width 370px
+      cursor pointer
+      .item
+        &__img
+          display block
+          width: 100%
+        &__text-box
+          padding 25px
+          background #FBFAF8
+          position relative
+          transition background .3s ease
+          .text-box
+            &__title
+              font-family: Raleway;
+              font-weight: 500;
+              font-size: 20px;
+              color: #C7B299;
+              transition color .3s ease
+            &__description
+              font-family: Montserrat;
+              font-weight: 300;
+              font-size: 14px;
+              color: #D1D1D1;
+              transition color .3s ease
+        &__text-box::before
+          content ''
+          position absolute
+          width: 0;
+          height: 0;
+          top -10px
+          left 14px
+          display block
+          border-style: solid;
+          border-width: 0 15px 10px 15px;
+          border-color: transparent transparent #FBFAF8 transparent;
+          transition border-color .3s ease
+    &__item:hover .text-box__title
+      color #fff
+    &__item:hover .item__text-box
+      background #352F2D
+    &__item:hover .text-box__description
+      color #C7B299
+    &__item:hover .item__text-box::before
+      border-color: transparent transparent #352F2D transparent; 
+    &__button
+      padding 20px 45px
+      outline none 
+      font-family: Roboto;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      background #988574
+      border none 
+      border-radius 3px
+      cursor pointer
+  .video
+    width 100%
+    height 500px
+    display block
+    outline none
+  .mobile
+    padding 80px 0 0 0
+    &__wrapper
+      display flex
+      justify-content center
+      align-items center
+      width 100%
+      flex-wrap wrap
+    &__img
+      display block
+      margin-right 64px 
+    &__content
+      display flex
+      flex-direction column
+      width 40%
+      .content
+        &__title
+          font-family: Raleway;
+          font-weight: 600;
+          font-size: 30px;
+          color: #555555;
+          margin-bottom 20px
+        &__description
+          font-family: Montserrat;
+          font-weight: 300;
+          font-size: 16px;
+          color: #8C8C8C;
+          margin-bottom 50px
+        &__list
+          list-style-type none
+          margin-left 64px
+          .list
+            &__item
+              font-family: Montserrat;
+              font-weight: 300;
+              font-size: 16px;
+              color: #8C8C8C;
+              margin-bottom 10px
+              line-height 21px
+              display inline-block
+              cursor pointer
+            &__item::before
+              content ''
+              display inline-block
+              vertical-align middle
+              width 21px
+              height 21px
+              background url('../img/circle_arrow.svg') center center / contain no-repeat
+              margin-right 8px
+  .stats
+    padding 35px 0
+    background radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%);
+    &__wrapper
+      display flex
+      align-items center
+      justify-content space-around
+      width 100%
+      flex-wrap wrap
+    &__item
+      display flex
+      flex-direction column
+      align-items center
+      width 120px
+      .item
+        &__img
+          display block
+          margin-bottom 5px
+        &__content
+          display flex
+          align-items center
+          width 100%
+          flex-direction column
+          .content
+            &__num
+              font-family: Montserrat;
+              font-weight: 300;
+              font-size: 48px;
+              color: #FFFFFF;
+              margin-bottom 5px
+            &__description
+              font-family: Montserrat;
+              font-weight: 300;
+              font-size: 14px;
+              color: #C7B299;
+    &__item::after
+      content ''
+      display block
+      width 30px
+      height 2px
+      margin 0 auto
+      background #fff
+      margin-top 15px
+  .posts
+    padding 100px 0 40px 0
+    &__wrapper
+      width 100%
+      display flex
+      flex-direction column
+      align-items center
+    &__title
+      font-family: Raleway;
+      font-weight: 600;
+      font-size: 30px;
+      color: #555555;
+      margin-bottom 20px
+    &__description
+      font-family: Montserrat;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.75;
+      text-align: center;
+      margin-bottom 30px
+      width 60%
+      color: #8C8C8C;
+    &__box
+      display flex
+      flex-wrap wrap
+      width 100%
+      align-items center 
+      justify-content space-between
+    &__item
+      display flex
+      width 370px
+      flex-direction column
+      align-items center
+      cursor pointer
+      .item
+        &__img
+          display block
+        &__content
+          padding 30px 25px
+          border 1px solid #b3b3b3
+          border-top none
+          transition background .3s, border-color .3s ease
+          .content
+            &__title
+              font-family: Raleway;
+              font-weight: 500;
+              font-size: 20px;
+              color: #555555;
+              margin-bottom 20px
+              transition color .3s ease
+            &__description
+              font-family: Montserrat;
+              font-weight: 300;
+              font-size: 14px;
+              line-height: 1.5;
+              color: #000000;
+              margin-bottom 20px
+              transition color .3s ease
+            &__read-more
+              font-family: Montserrat;
+              font-weight: 300;
+              font-size: 14px;
+              color: #C7B299;
+              display inline-block
+              .read-more
+                &__icon
+                  display inline-block
+                  margin-left 8px
+    &__item:hover .item__content
+      background #352F2D !important
+      border-color #352F2D !important
+    &__item:hover .content__title
+      color #C7B299 !important
+    &__item:hover .content__description
+      color #fff !important
+    &__button-box
+      display flex
+      align-items center 
+      margin-top 55px
+      .button-box
+        &__button
+          border-radius 50%
+          width 22px
+          height 22px
+          cursor pointer
+          display block
+          transition fill .3s ease
+        &__button:first-of-type
+          transform scale(-1)
+          margin-right 20px
+        &__button:hover
+          fill #C7B299 !important
+  .partners
+    padding 140px 0
+    background url('../img/bg_partners.jpg') center center / cover no-repeat
+    &__wrapper
+      display flex
+      width 100%
+      align-items center 
+      justify-content center
+    &__img
+      display flex
+      width 100%
+
+/* main */
+
+/* footer */
+
+.blue
+  color #00BFF3
+
+.footer
+  &__top
+    padding 75px 0 120px 0
+    background #191919
+    width 100%
+    .top
+      &__wrapper
+        width 100%
+        display flex
+        justify-content space-between
+        flex-wrap wrap
+      &__item
+        width 270px
+        display flex
+        flex-direction column
+        cursor pointer
+        .item
+          &__title
+            font-family: Raleway;
+            font-weight: 600;
+            font-size: 24px;
+            color: #FFFFFF;
+            margin-bottom 24px
+          &__description
+            font-family: Montserrat;
+            font-weight: 300;
+            font-size: 14px;
+            color: #555555;
+            margin-bottom 12px
+            transition color .3s ease
+            .description
+              &__date
+                font-family: Montserrat;
+                font-weight: 300;
+                font-size: 12px;
+                color: #363636;
+                margin-bottom 5px
+                display block
+                transition color .3s ease
+          &__description:not(:last-of-type)::after
+            content ''
+            display block
+            width 100%
+            height 1px
+            background #242424
+            margin-top 15px
+          &__description:hover
+            color #C7B299
+          &__description:hover .description__date
+            color #fff
+          &__img
+            display block
+            width 70%
+            margin-bottom 15px
+          &__read-more
+            font-family: Montserrat;
+            font-size: 14px;
+            color: #D1D1D1;
+            display inline-block
+          &__read-more::after
+            content ''
+            display inline-block
+            margin-left 8px
+            width 5px
+            height 7px
+            background url('../img/read_more_icon.svg') center center / contain no-repeat
+      &__item:not(:first-of-type)
+        margin-top 25px
+      &__widget
+        display block
+  &__bottom
+    padding 60px 0 40px 0
+    background #101010
+    .bottom
+      &__list
+        list-style-type none
+        display flex
+        align-items center
+        flex-wrap wrap
+        .list
+          &__item
+            font-family: Montserrat;
+            font-weight: 300;
+            font-size: 13px;
+            transition color .3s ease
+            color: #555555;
+            padding 0 10px
+            cursor pointer
+          &__item:not(:last-of-type)
+            border-right 1px solid #1A1A1A
+          &__item:hover
+            color #BAA78F
+
+/* footer */
